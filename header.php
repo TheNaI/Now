@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 </head>
 <body>
     <nav class="now-navbar navbar navbar-default" role="navigation">
@@ -43,8 +44,13 @@
 				</a>
 			</div>
 		</div>
-		<div class="menu">
-			
-		</div>
+		<ul class="menu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">SERVICE</a></li>
+			<li><a href="#">OUR TEAM</a></li>
+			<li><a href="#">ARTICLE</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

@@ -4,7 +4,7 @@ include('header.php');
 
 ?>
 
-<div class="container-body" style="background-image: url('img/bg_homepage.png');">
+<div class="container-header" style="background-image: url('img/bg_homepage.png');">
     <div class="banner">
         <img src="img/bannert_homepage.jpg" alt="">
     </div>
@@ -18,7 +18,9 @@ include('header.php');
         </div>
     </div>
 </div>
+<div class="container-body">
 
+</div>
 <?php
 
 include('footer.php');
