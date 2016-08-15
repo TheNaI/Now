@@ -24,7 +24,7 @@
     <nav class="now-navbar navbar navbar-default" role="navigation">
     	<!-- Brand and toggle get grouped for better mobile display -->
     	<div class="navbar-header">
-    		<a class="navbar-brand" href="#"><i class="nav-logo"></i></a>
+    		<a class="navbar-brand" href="index.php"><i class="nav-logo"></i></a>
     	</div>
         <div class="now-nav-menu">
             <a data-toggle="modal" href="#modal-menu" class="menu-btn">
@@ -49,7 +49,7 @@
 			<li><a href="about.php">ABOUT US</a></li>
 			<li><a href="#">SERVICE</a></li>
 			<li><a href="#">OUR TEAM</a></li>
-			<li><a href="#">ARTICLE</a></li>
+			<li><a href="article.php">ARTICLE</a></li>
 			<li><a href="#">CONTACT US</a></li>
 		</ul>
 	</div><!-- /.modal-dialog -->

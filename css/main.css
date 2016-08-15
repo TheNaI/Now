@@ -2,6 +2,9 @@
 *{
     font-family: 'Prompt', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .now-nav-menu{
     float: right;
     font-size: 30px;
@@ -58,7 +61,7 @@
 }
 #modal-menu a.close{
     opacity: 1;
-    padding: 14px 43px;
+    padding: 14px 25px;
     color: #FFF;
     font-weight: 100;
     font-size: 20px;
@@ -234,6 +237,156 @@ a.see-more{
 .about-us{
     font-size: 16px;
 }
+.type-article{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.type-article>li{
+    margin:0;
+    padding: 0;
+    display: inline-block;
+}
+.type-article>li>a{
+    color: #808080;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 25px;
+}
+.type-article>li>a.active{
+    color: #333333;
+}
+
+.now-article{
+    width: 640px;
+    margin: auto;
+}
+.now-article>.article{
+    width: 100%;
+    display: inline-block;
+}
+.article-header{
+    border: 1px solid #cccccc;
+    height: 75px;
+}
+.article-title{
+    border-right: 1px solid #cccccc;
+    width: 70%;
+    height: 100%;
+    padding-left: 40px;
+    float: left;
+}
+.article-title>.title{
+    margin: 0;
+    padding-top: 15px;
+}
+.article-title>.title>a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+.article-social{
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1;
+    font-size: 11px;
+}
+.article-social>a{
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+.article-social>a>.fa-facebook-square{
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 38px;
+}
+.article-img {
+    height: 600px;
+    overflow: hidden;
+}
+.article-img a>img{
+    width: 100%;
+}
+.article-detail{
+    font-size: 16px;
+    padding: 15px 0;
+}
+.article-readmore{
+    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+a.btn-readmore{
+    color: #990012;
+    border: #990012 1px solid;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.other-article{
+    height: 500px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.footer-article + .footer{
+    margin-top: 0;
+}
+
+.other-article .article-row{
+    text-align: center;
+    width: 100%;
+}
+.other-article .article{
+    width: 225px;
+    display: inline-block;
+    margin: 20px 5px;
+}
+.other-article .article>a{
+    display: inline-block;
+}
+.other-article .article>a>img{
+    width: 100%;
+}
+.other-article .article>.detail{
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.other-article-nav{
+    text-align: center;
+    padding-top: 30px;
+}
+.other-article-nav>a{
+    background-color: #cccccc;
+    color: #333333;
+    font-size: 28px;
+    height: 40px;
+    padding: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.other-article-nav>a.next>.fa-angle-right{
+    font-size: 28px;
+    line-height: 38px;
+    margin-right: 20px;
+}
+.other-article-nav>a.next{
+    background-color: #333333;
+    color: #FFF;
+    font-size: 13px;
+    padding: 0 15px;
+}
+.other-article .title{
+    margin-top: 30px;
+}
 
 
 @media (min-width: 768px){
@@ -251,7 +404,6 @@ a.see-more{
         width: 800px;
     }
 }
-
 
 @media (max-width: 767px) {
     .home-ports{
@@ -309,5 +461,38 @@ a.see-more{
     }
     .container-body {
         padding-top: 30px;
+    }
+    .other-article{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .other-article .article {
+        width: 225px;
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+    }
+    .article-img{
+        height: auto;
+    }
+    .now-article{
+        width: 100%;
+    }
+    .article-title{
+        padding-left: 15px;
+    }
+    .now-navbar .navbar-brand{
+        padding-left: 0;
+    }
+    #modal-menu .menu-left{
+        padding: 3px 0;
+    }
+    #modal-menu a.close{
+        padding-left: 0;
+        top: 0;
+        position: fixed;
+        width: 260px;
+        right: -150px;
     }
 }
