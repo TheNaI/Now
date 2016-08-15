@@ -231,6 +231,11 @@ a.see-more{
     color: #990012;
 }
 
+.about-us{
+    font-size: 16px;
+}
+
+
 @media (min-width: 768px){
     .text-banner {
         width: 700px;

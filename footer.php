@@ -5,8 +5,8 @@
         </div>
         <div class="footer-menu">
             <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.php">ABOUT US</a></li>
                 <li><a href="#">SERVICE</a></li>
                 <li><a href="#">OUR TEAM</a></li>
                 <li><a href="#">ARTICLE</a></li>
