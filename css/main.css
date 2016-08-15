@@ -140,6 +140,7 @@
 .footer{
     height : 300px;
     background-color: #cccccc;
+    margin-top: 60px;
 }
 .logo-footer{
     background-image: url('../img/logo-footer.png');
@@ -224,6 +225,12 @@
     height: 215px;
     width: 420px;
 }
+a.see-more{
+    font-size: 24px;
+    text-decoration: none;
+    color: #990012;
+}
+
 @media (min-width: 768px){
     .text-banner {
         width: 700px;

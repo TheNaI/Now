@@ -79,7 +79,9 @@ include('header.php');
             </div>
         </div>
         <div class="row">
-            
+            <div class="col-xs-12 text-center">
+                <a href="#" class="see-more">SEE MORE</a>
+            </div>
         </div>
     </div>
 </div>
