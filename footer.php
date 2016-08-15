@@ -8,7 +8,7 @@
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="about.php">ABOUT US</a></li>
                 <li><a href="#">SERVICE</a></li>
-                <li><a href="#">OUR TEAM</a></li>
+                <li><a href="ourteam.php">OUR TEAM</a></li>
                 <li><a href="article.php">ARTICLE</a></li>
                 <li><a href="#">CONTACT US</a></li>
             </ul>
