@@ -14,7 +14,7 @@
             </ul>
         </div>
         <div class="text-center">
-            COPYRIGHT © 2016 NOWORNEVERDIGITAL CO.,LTD  ALL  RIGHT  RESERVED.
+            COPYRIGHT © 2016 <br class="visible-xs">NOWORNEVERDIGITAL CO.,LTD  ALL  RIGHT  RESERVED.
         </div>
     </dic>
 </div>
