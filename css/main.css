@@ -22,6 +22,34 @@
     width: 67px;
     height: 82px;
 }
+.icon-web{
+    background-image: url("../img/web.png");
+    width: 68px;
+    height: 69px;
+}
+.icon-google{
+    background-image: url("../img/google.png");
+    width: 80px;
+    height: 53px;
+}
+
+.icon-seo{
+    background-image: url("../img/seo.png");
+    width: 66px;
+    height: 56px;
+}
+
+.icon-social{
+    background-image: url("../img/social.png");
+    width: 74px;
+    height: 58px;
+}
+
+.icon-facebook{
+    background-image: url("../img/facebook.png");
+    width: 59px;
+    height: 61px;
+}
 *{
     font-family: 'Prompt', sans-serif;
 }
@@ -426,13 +454,14 @@ a.btn-readmore{
     width: 730px;
     margin: auto;
     text-align: center;
+    display: table;
 }
 .icon-row>.icon>li{
     padding: 0;
     list-style: none;
-    display: inline-block;
     color: #999999;
     margin: 0 20px;
+    display: table-cell;
 }
 .ourteam-content{
     width: 100%;
