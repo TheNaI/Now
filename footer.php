@@ -10,7 +10,7 @@
                 <li><a href="service.php">SERVICE</a></li>
                 <li><a href="ourteam.php">OUR TEAM</a></li>
                 <li><a href="article.php">ARTICLE</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="contact.php">CONTACT US</a></li>
             </ul>
         </div>
         <div class="text-center">
