@@ -435,7 +435,7 @@ a.btn-readmore{
     margin: 0 20px;
 }
 .ourteam-content{
-    width: 800px;
+    width: 100%;
     text-align: left;
     font-size: 18px;
     padding: 30px 10px;
@@ -461,6 +461,9 @@ a.btn-readmore{
 
 @media (min-width: 992px){
     .text-banner {
+        width: 800px;
+    }
+    .ourteam-content {
         width: 800px;
     }
 }
@@ -554,5 +557,12 @@ a.btn-readmore{
         position: fixed;
         width: 260px;
         right: -150px;
+    }
+    .icon-row>.icon{
+        width: 100%;
+    }
+    .icon-row>.icon>li{
+        margin-bottom: 30px;
+        display: block;
     }
 }
