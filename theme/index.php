@@ -4,9 +4,9 @@
  */
 
 get_header(); ?>
-    <div class="container-header" style="background-image: url('img/bg_homepage.png');">
+    <div class="container-header" style="background-image: url('<?php echo get_bloginfo('template_url')?>/img/bg_homepage.png');">
         <div class="banner">
-            <img src="img/bannert_homepage.jpg" alt="">
+            <img src="<?php echo get_bloginfo('template_url')?>/img/bannert_homepage.jpg" alt="">
         </div>
         <div class="under-banner">
             <div class="container">
@@ -38,42 +38,42 @@ get_header(); ?>
                 <div class="home-ports clearfix">
                     <div class="now-port type1">
                         <a href="#">
-                            <img src="img/p1.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p1.png" alt="">
                         </a>
                     </div>
                     <div class="now-port type2">
                         <a href="#">
-                            <img src="img/p2.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p2.png" alt="">
                         </a>
                     </div>
                     <div class="now-port ">
                         <a href="#">
-                            <img src="img/p3.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p3.png" alt="">
                         </a>
                     </div>
                     <div class="now-port ">
                         <a href="#">
-                            <img src="img/p4.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p4.png" alt="">
                         </a>
                     </div>
                     <div class="now-port ">
                         <a href="#">
-                            <img src="img/p5.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p5.png" alt="">
                         </a>
                     </div>
                     <div class="now-port ">
                         <a href="#">
-                            <img src="img/p6.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/p6.png" alt="">
                         </a>
                     </div>
                     <div class="now-port s-type1">
                         <a href="#">
-                            <img src="img/ps-1.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/ps-1.png" alt="">
                         </a>
                     </div>
                     <div class="now-port s-type2">
                         <a href="#">
-                            <img src="img/ps-2.png" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/ps-2.png" alt="">
                         </a>
                     </div>
                 </div>

@@ -4,23 +4,24 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
+	<title><?php bloginfo( 'name' ); ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
-<!---->
-<!--    <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
-<!--    <link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url')?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url')?>/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url')?>/css/main.css">
 
-<!--    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+    <script src="<?php echo get_bloginfo('template_url')?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+	<?php wp_head(); ?>
 </head>
-<body>
+<body class="<?php if ( is_admin() )
+	echo 'wp-admin'; ?>">
     <nav class="now-navbar navbar navbar-default" role="navigation">
     	<!-- Brand and toggle get grouped for better mobile display -->
     	<div class="navbar-header">

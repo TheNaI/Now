@@ -1,3 +1,9 @@
+.customize-support .now-navbar.navbar-default{
+    top: 32px;
+}
+.customize-support  .logo-menu{
+    top: 32px;
+}
 .now-icon{
     display: inline-block;
     background-size: 100%;
