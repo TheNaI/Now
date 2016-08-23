@@ -1,32 +1,15 @@
 <?php
+/**
+ * Template Name: Our team Page
+ */
 
-include('header.php');
-
-?>
-
-<div class="container-header" style="background-image: url('img/bg_service.jpg');">
-    <div class="banner">
-        <img src="img/bannert_homepage.jpg" alt="">
-    </div>
-    <div class="under-banner">
-        <div class="container">
-            <p class="text-banner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc sapien, <br>
-                varius quis orci. Integer dignissim, purus eget sollicitudin bibendum, nulla<br>
-                pharetra luctus sapien ante sed nibh. Aliquam erat volutpat. Ut blandit cursus<br>
-                turpis risus, condimentum eu diam a, posuere sollicitudin justo. Ut venenatis.            </p>
-        </div>
-    </div>
-    <div class="bg-fade">
-        
-    </div>
-</div>
+get_header(); ?>
 <div class="container">
     <div class="container-body">
         <div class="row">
             <div class="col-xs-12">
                 <h3 class="now-title text-center">
-                    SERVICE<br>
+                    OURTEAM<br>
                     <i class="dot-title"></i>
                     <i class="dot-title"></i>
                     <i class="dot-title"></i>
@@ -39,26 +22,20 @@ include('header.php');
                 <div class="icon-row">
                     <ul class="icon">
                         <li>
-                            <i class="now-icon icon-web"></i><br>
-                            WEBDESIGN
+                            <i class="now-icon icon-strategic"></i><br>
+                            STRATEGIC PLANNER
                         </li>
                         <li>
-                            <i class="now-icon icon-google"></i><br>
-                            GOOGLE ADWORDS
+                            <i class="now-icon icon-media"></i><br>
+                            DIGITAL MEDIA
                         </li>
                         <li>
-                            <i class="now-icon icon-seo"></i><br>
-                            SEO
+                            <i class="now-icon icon-graphic"></i><br>
+                            CREATIVE GRAPHIC
                         </li>
                         <li>
-                            <i class="now-icon icon-social"></i><br>
-                            SOCIAL MEDIA <br>
-                            MARKETING
-                        </li>
-                        <li>
-                            <i class="now-icon icon-facebook"></i><br>
-                            FACEBOOK
-                            ADS
+                            <i class="now-icon icon-content"></i><br>
+                            DIGITAL CONTENT
                         </li>
                     </ul>
                 </div>
@@ -77,8 +54,13 @@ include('header.php');
         <div class="row">
             <div class="col-xs-12">
                 <div class="ourteam-img">
-                    <img src="img/service.jpg" alt="">
+                    <img src="<?php echo get_bloginfo('template_url')?>/img/team.png" alt="">
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a href="#" class="join">JOIN US</a>
             </div>
         </div>
     </div>

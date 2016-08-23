@@ -1,8 +1,11 @@
 .customize-support .now-navbar.navbar-default{
     top: 32px;
 }
-.customize-support  .logo-menu{
+.customize-support .logo-menu{
     top: 32px;
+}
+.customize-support #modal-menu .modal-dialog{
+    padding-top: 32px;
 }
 .now-icon{
     display: inline-block;
@@ -153,7 +156,8 @@ a{
 }
 #modal-menu .menu>li>a{
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    text-transform: uppercase;
 }
 .close-icon{
     background-image: url("../img/close.png");

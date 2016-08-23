@@ -4,12 +4,6 @@
  */
 
 get_header(); ?>
-    <?php
-if ( 'posts' == get_option( 'show_on_front' ) ) {
-    include( get_home_template() );
-}
-?>
-
     <div class="container">
         <div class="container-body">
             <div class="row">

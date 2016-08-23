@@ -1,26 +1,9 @@
 <?php
+/**
+ * Template Name: Article Page
+ */
 
-include('header.php');
-
-?>
-
-<div class="container-header" style="background-image: url('img/bg_article.jpg');">
-    <div class="banner">
-        <img src="img/bannert_homepage.jpg" alt="">
-    </div>
-    <div class="under-banner">
-        <div class="container">
-            <p class="text-banner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc sapien, <br>
-                varius quis orci. Integer dignissim, purus eget sollicitudin bibendum, nulla<br>
-                pharetra luctus sapien ante sed nibh. Aliquam erat volutpat. Ut blandit cursus<br>
-                turpis risus, condimentum eu diam a, posuere sollicitudin justo. Ut venenatis.            </p>
-        </div>
-    </div>
-    <div class="bg-fade">
-        
-    </div>
-</div>
+get_header(); ?>
 <div class="container">
     <div class="container-body">
         <div class="row">
@@ -64,7 +47,7 @@ include('header.php');
                         </div>
                         <div class="article-img">
                             <a href="#">
-                                <img src="img/article-img.jpg" alt="">
+                                <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
                             </a>
                         </div>
                         <div class="article-detail">
@@ -94,7 +77,7 @@ include('header.php');
                 <div class="article-row">
                     <div class="article">
                         <a href="#">
-                            <img src="img/article-img.jpg" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
                         </a>
                         <div class="detail">
                             Lorem ipsum dolor ctetur adipiscing elit.
@@ -102,7 +85,7 @@ include('header.php');
                     </div>
                     <div class="article">
                         <a href="#">
-                            <img src="img/article-img.jpg" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
                         </a>
                         <div class="detail">
                             Lorem ipsum dolor ctetur adipiscing elit.
@@ -110,7 +93,7 @@ include('header.php');
                     </div>
                     <div class="article">
                         <a href="#">
-                            <img src="img/article-img.jpg" alt="">
+                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
                         </a>
                         <div class="detail">
                             Lorem ipsum dolor ctetur adipiscing elit.

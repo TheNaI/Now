@@ -45,13 +45,24 @@
 				</a>
 			</div>
 		</div>
-		<ul class="menu">
-			<li><a href="index.php">HOME</a></li>
-			<li><a href="about.php">ABOUT US</a></li>
-			<li><a href="service.php">SERVICE</a></li>
-			<li><a href="ourteam.php">OUR TEAM</a></li>
-			<li><a href="article.php">ARTICLE</a></li>
-			<li><a href="contact.php">CONTACT US</a></li>
-		</ul>
+		<?php
+		wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu' ) );
+		?>
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+	<div class="container-header" style="background-image: url('<?php if (has_post_thumbnail() ) { $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
+		echo $image[0]; } ?>');">
+		<div class="banner">
+			<img src="<?php echo get_bloginfo('template_url')?>/img/bannert_homepage.jpg" alt="">
+		</div>
+		<div class="under-banner">
+			<div class="container">
+				<p class="text-banner">
+					<?php echo get_the_excerpt() ?>
+			</div>
+		</div>
+		<div class="bg-fade">
+
+		</div>
+	</div>
