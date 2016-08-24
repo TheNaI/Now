@@ -20,43 +20,67 @@ get_header(); ?>
         <div class="row">
             <div class="col-xs-12">
                 <ul class="type-article">
-                    <li><a class="active" href="#">TYPE ARTICLE 1</a></li>
-                    <li><a href="#">TYPE ARTICLE 2</a></li>
+                    <?php
+                        $cats = get_categories();
+                        foreach ($cats as $c){
+                    ?>
+                    <li><a class="active" href="<?php $c->slug ?>"><?php echo $c->name?></a></li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="now-article">
+                    <?php
+                    $posts =  get_posts();
+                    foreach ($posts as $post){
+                        $api = file_get_contents( 'http://graph.facebook.com/?id=http://'.get_permalink() );
+
+                        $count = json_decode( $api );
+                        $share = $count->share->share_count;
+                        if(!isset($share)){
+                            $share = 0;
+
+                        }
+                    ?>
                     <div class="article">
                         <div class="article-header">
                             <div class="article-title">
                                 <h3 class="title">
-                                    <a href="#">TITLE BLOG</a>
+                                    <a href="<?php echo get_permalink() ?>"><?php echo $post->post_title; ?></a>
                                 </h3>
                                 <p class="sub-title">
-                                    TYPE ARTICLE 1 / NEWS
+                                    <?php
+                                    $categories = get_the_category();
+                                    $catArray = array();
+                                    foreach( $categories as $category ) {
+                                        array_push($catArray, $category->name);
+                                    }
+                                    echo implode(', ',$catArray);
+                                    ?> / NEWS
                                 </p>
                             </div>
                             <div class="article-social">
-                                <a href="#">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" target="_blank">
                                     <i class="fa fa-facebook-square" aria-hidden="true"></i><br>
-                                    199 SHARE
+                                    <?php echo $share ?> SHARE
                                 </a>
                             </div>
                         </div>
                         <div class="article-img">
-                            <a href="#">
-                                <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
+                            <a href="<?php echo get_permalink() ?>">
+                                <img src="<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $feat_image; ?>" alt="">
                             </a>
                         </div>
                         <div class="article-detail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ducimus fugiat laborum nihil, odit omnis. Asperiores aspernatur cum deleniti enim, fuga laboriosam maiores nihil non odio officiis quo sequi voluptatum?
+                            <?php the_excerpt(); ?>
                         </div>
                         <div class="article-readmore">
-                            <a href="#" class="btn-readmore">READ MORE</a>
+                            <a href="<?php echo $post->post_name ?>" class="btn-readmore">READ MORE</a>
                         </div>
                     </div>
+                    <?php }?>
                 </div>
             </div>
         </div>
@@ -75,30 +99,21 @@ get_header(); ?>
         <div class="row">
             <div class="col-xs-12">
                 <div class="article-row">
-                    <div class="article">
-                        <a href="#">
-                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
-                        </a>
-                        <div class="detail">
-                            Lorem ipsum dolor ctetur adipiscing elit.
+                    <?php
+                    $posts = get_posts('orderby=rand&numberposts=3');
+                    foreach ($posts as $post){
+                        ?>
+                        <div class="article">
+                            <a href="<?php echo get_permalink() ?>">
+                                <img src="<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $feat_image; ?>" alt="">
+                            </a>
+                            <div class="detail">
+                                <?php the_excerpt(); ?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="article">
-                        <a href="#">
-                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
-                        </a>
-                        <div class="detail">
-                            Lorem ipsum dolor ctetur adipiscing elit.
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="#">
-                            <img src="<?php echo get_bloginfo('template_url')?>/img/article-img.jpg" alt="">
-                        </a>
-                        <div class="detail">
-                            Lorem ipsum dolor ctetur adipiscing elit.
-                        </div>
-                    </div>
+                    <?php } ?>
+
+
                 </div>
             </div>
         </div>

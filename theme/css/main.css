@@ -240,6 +240,7 @@ a{
     text-decoration: none;
     color: #4d4d4d;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 /*----- body -----*/
@@ -380,7 +381,7 @@ a.join{
     font-size: 38px;
 }
 .article-img {
-    height: 600px;
+    /*height: 600px;*/
     overflow: hidden;
 }
 .article-img a>img{
@@ -430,6 +431,8 @@ a.btn-readmore{
     text-align: left;
     font-size: 18px;
     padding-top: 10px;
+    height: 85px;
+    overflow: hidden;
 }
 .other-article-nav{
     text-align: center;
